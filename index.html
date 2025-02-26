@@ -2,34 +2,200 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>My Resume</title>
+    <title>Mohamed Kenawi - Resume</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Times New Roman", serif;
+        background-color: #616161;
+        border-radius: 5px;
+        padding: 40px 0;
+        line-height: 1.5;
+      }
+      .container {
+        display: flex;
+        max-width: 1000px;
+        margin: 2rem auto;
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .box1 {
+        flex: 1;
+        color: #f6feff;
+        background-color: #313c4e;
+        margin: 10px 50px 10px 10px;
+        border-radius: 10px;
+        border-right: 10px solid #3f7d86;
+        box-shadow: 8px 0 0 #5fb3b3;
+        padding: 1rem;
+      }
+      .image {
+        border-radius: 10px;
+        border: 4px solid #5fb3b3;
+        outline: 5px solid #3f7d86;
+        border-radius: 50%;
+        margin: 50px 50px 0px 50px;
+        height: 150px;
+      }
+      .side-container li {
+        font-size: 1rem;
+        font-weight: bold;
+        list-style: none;
+        border: 10px solid #acb1b8;
+        background-color: #acb1b8;
+        margin-right: 30px;
+        border-radius: 5px;
+        color: #242a35;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      .lang-container li {
+        list-style: none;
+        margin: 10px;
+      }
+      i {
+        font-size: 13px;
+      }
+      .box1 h2 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      .box2 {
+        flex: 2;
+        order: 1;
+        margin-top: 30px;
+      }
+      h1 {
+        margin-bottom: 0px;
+        font-weight: 500;
+        color: #242a35;
+      }
+      .title > p {
+        margin-top: 0px;
+        color: #5fb3b3;
+        font-weight: 300;
+      }
+      .about {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      .side-container {
+      }
+
+      footer {
+        font-size: 10px;
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        text-align: right;
+        color: #333;
+      }
+
+      .grid-container {
+        display: grid;
+        background-color: #313c4e;
+        width: 95%;
+        grid-template-columns: 300px 300px;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+      .item {
+        margin-left: 10px;
+      }
+      .box2 h2 {
+        color: #242a35;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Mohamed Kenawi</h1>
-    <p>Web developer | Sales & Marketing</p>
-    <img src="./images/IMG_0042.JPG" alt="profile picture" height="100" />
-    <hr />
-    <h2>Summary</h2>
-    <p>
-      A passionate, hard-working individual thriving on expanding my expertise
-      and growing in an ever-evolving world.
-    </p>
-    <hr />
-    <h2>Education</h2>
-    <ul>
-      <li>Five-year Advanced Technical Diploma in Computer Science (2010).</li>
-      <li>
-        Bachelor's degree in Software Engineering from Vilnius University
-        (ongoing).
-      </li>
-    </ul>
-    <hr />
-    <h2>Working Experience</h2>
-    <ul>
-      <li>
+    <div class="container">
+      <div class="side-box">
+        <div class="box1">
+          <img
+            class="image"
+            src="./images/IMG_0042.JPG"
+            alt="profile picture"
+          />
+          <h2>Skills</h2>
+          <ul class="side-container">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>PHP</li>
+            <li>C#</li>
+            <li>F#</li>
+            <li>git & github</li>
+            <li>Customer Service</li>
+            <li>Market Research</li>
+            <li>Market Analysis</li>
+            <li>Marketing Strategy</li>
+            <li>Team Management</li>
+            <li>Product Marketing</li>
+            <li>Sales Management</li>
+            <li>Support Management</li>
+            <li>Sales Management</li>
+          </ul>
+          <br />
+          <h2>Soft Skills</h2>
+          <ul class="side-container">
+            <li>Team Leadership</li>
+            <li>Clear Communication</li>
+            <li>Adaptable to Change</li>
+          </ul>
+          <h2>Languages</h2>
+          <div class="lang-container">
+            <ul>
+              <li>Arabic: <br /><i>Native</i></li>
+              <li>English: <br /><i>Full Professional Proficiency</i></li>
+              <li>Lithuanian: <br /><i>Elementary Proficiency</i></li>
+              <li>Estonian: <br /><i>Elementary Proficiency</i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="title">
+          <h1>Mohamed Kenawi</h1>
+          <p>Web developer | Sales & Marketing</p>
+        </div>
+        <p class="about">
+          A passionate, hard-working individual thriving on expanding my
+          expertise and growing in an evolving world.
+        </p>
+        <div class="grid-container">
+          <div class="item">
+            <a href="muhamed.saber.1990@gmail.com"
+              ><p>✉️ muhamed.saber.1990@gmail.com</p>
+            </a>
+          </div>
+          <div class="item"><p>📱 +37062455425</p></div>
+          <div class="item"><p>🌐 Lithuania</p></div>
+          <div class="item">
+            <a href="https://www.linkedin.com/in/mohamed-kenawi/"
+              ><p>👔 www.linkedin.com/in/mohamed-kenawi</p>
+            </a>
+          </div>
+        </div>
+        <h2>Working Experience</h2>
+
         <h3>Enthusiastic Scheduling Specialist</h3>
-        <p>Remotely, DSP Health USA (October 2024 - Present)</p>
+        <p>
+          Remotely at
+          <a href="https://www.dsp.health/">DSP Health USA</a> from October 2024
+          - Present
+        </p>
         <ul>
           <li>
             Increased the performance of scheduling tools to maximize staff
@@ -42,11 +208,16 @@
             needs.
           </li>
         </ul>
-      </li>
-      <p></p>
-      <li>
+
+        <p></p>
+
         <h3>Area Sales Manager</h3>
-        <p>E-tronics Samsung Egypt from 08/2021 to 09/2023</p>
+        <p>
+          <a href="https://www.linkedin.com/company/e-tronic-samsung"
+            >E-tronics Samsung Egypt</a
+          >
+          from 08/2021 to 09/2023
+        </p>
         <ul>
           <li>
             Conducting direct sales to wholesale dealers in Shakira District,
@@ -64,16 +235,16 @@
             Contributed to surpassing quarterly sales targets and achieving
             substantial growth.
           </li>
-          <p>
-            Contact person:
-            <a href="https://www.facebook.com/ekramy.hussin">Ekramy Hussin</a>
-            +201226006444
-          </p>
+          <p>Contact person: Ekramy Hussin +201226006444</p>
         </ul>
-      </li>
-      <li>
+
         <h3>Marketing Supervisor</h3>
-        <p>Smart Sense Co. LTD Egypt from 10/2018 to 08/2021</p>
+        <p>
+          <a href="https://www.linkedin.com/company/smart-sense-co-ltd"
+            >Smart Sense Co. LTD Egypt</a
+          >
+          from 10/2018 to 08/2021
+        </p>
         <ul>
           <li>
             Maximized marketing ROI by continuously optimizing strategies based
@@ -99,10 +270,14 @@
             </p>
           </li>
         </ul>
-      </li>
-      <li>
+
         <h3>Marketing Executive</h3>
-        <p>Smart Sense Co. LTD Egypt from 08/2015 to 10/2018</p>
+        <p>
+          <a href="https://www.linkedin.com/company/smart-sense-co-ltd"
+            >Smart Sense Co. LTD Egypt</a
+          >
+          from 08/2015 to 10/2018
+        </p>
         <ul>
           <li>
             Sales Data Collection: Gathered sales data for Samsung Home
@@ -133,53 +308,25 @@
             </p>
           </li>
         </ul>
-      </li>
-    </ul>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-      <li>
-        Hard Skills
+
+        <h2>Education</h2>
         <ul>
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>C++</li>
-          <li>PHP</li>
-          <li>C#</li>
-          <li>F#</li>
-          <li>Customer Service</li>
-          <li>Market Research</li>
-          <li>Market Analysis</li>
-          <li>Marketing Strategy</li>
-          <li>Team Management</li>
-          <li>Product Marketing</li>
-          <li>Sales Management</li>
-          <li>Support Management</li>
-          <li>Sales Management</li>
+          <li>
+            Five-year Advanced Technical Diploma in Computer Science (2010).
+          </li>
+          <li>
+            Bachelor's degree in Software Engineering from Vilnius University
+            (ongoing).
+          </li>
         </ul>
-      </li>
-      <p></p>
-      <li>
-        Soft Skills
-        <ul>
-          <li>Team Leadership</li>
-          <li>Clear Communication</li>
-          <li>Adaptable to Change</li>
-        </ul>
-      </li>
-    </ul>
-    <h2>Languages</h2>
-    <ul>
-      <li>Arabic: Native or Bilingual Proficiency</li>
-      <li>English: Full Professional Proficiency</li>
-      <li>Lithuanian: Elementary Proficiency</li>
-      <li>Estonian: Elementary Proficienc</li>
-    </ul>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
-    <footer>
-      <p>© Mohamed Kenawi. All rights reserved.</p>
-    </footer>
+        <!-- <footer>
+          <p>© Mohamed Kenawi All rights reserved.</p>
+        </footer> -->
+      </div>
+      <!-- <div class="foot">
+        <a href="./public/about.html">About Me</a>
+        <a href="./public/contact.html">Contact Me</a>
+      </div> -->
+    </div>
   </body>
 </html>
